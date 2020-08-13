@@ -1,20 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: burycel
- * Date: 14-8-16
- * Time: 15:50
- */
 
-namespace FixtureBundle\Repository;
-
+namespace Youwe\FixturesBundle\Repository;
 
 use Pimcore\Model\DataObject;
 use Pimcore\Model\DataObject\AbstractObject;
 
 class FolderRepository
 {
-
     /**
      * @param $query
      * @return AbstractObject[]

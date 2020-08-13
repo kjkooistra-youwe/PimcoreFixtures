@@ -1,13 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: burycel
- * Date: 12-2-17
- * Time: 7:09
- */
 
-namespace FixtureBundle\Alice\Processor;
-
+namespace Youwe\FixturesBundle\Alice\Processor;
 
 use Nelmio\Alice\ProcessorInterface;
 use Pimcore\Model\Document;

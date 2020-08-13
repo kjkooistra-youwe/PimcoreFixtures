@@ -1,7 +1,6 @@
 <?php
 
-
-namespace FixtureBundle\Alice\Providers;
+namespace Youwe\FixturesBundle\Alice\Providers;
 
 use Exception;
 use Faker\Provider\Base;

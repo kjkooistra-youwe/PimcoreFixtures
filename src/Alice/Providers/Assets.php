@@ -1,8 +1,6 @@
 <?php
 
-
-namespace FixtureBundle\Alice\Providers;
-
+namespace Youwe\FixturesBundle\Alice\Providers;
 
 class Assets
 {

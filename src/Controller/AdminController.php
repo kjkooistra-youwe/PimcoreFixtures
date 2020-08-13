@@ -1,13 +1,13 @@
 <?php
 
+namespace Youwe\FixturesBundle\Controller;
+
 use Fixtures\FixtureLoader;
 use Fixtures\Repository\FolderRepository;
-use Pimcore\Controller\Action\Admin;
-use Pimcore\Model\Object\Folder;
+use Pimcore\Model\DataObject\Folder;
 
-class PimcoreFixtures_AdminController extends Admin
+class AdminController extends \Pimcore\Bundle\AdminBundle\Controller\AdminController
 {
-
     public function settingsAction()
     {
         $this->enableLayout();
@@ -55,4 +55,3 @@ class PimcoreFixtures_AdminController extends Admin
         $this->_helper->json(['success' => true]);
     }
 }
-

@@ -1,8 +1,6 @@
 <?php
 
-
-namespace FixtureBundle\Alice\Processor;
-
+namespace Youwe\FixturesBundle\Alice\Processor;
 
 use Nelmio\Alice\ProcessorInterface;
 use Pimcore\Model\DataObject\AbstractObject;
@@ -12,8 +10,6 @@ use Pimcore\Tool;
 
 class UserProcessor implements ProcessorInterface
 {
-
-
     /**
      * Processes an object before it is persisted to DB
      *

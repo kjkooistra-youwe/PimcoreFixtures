@@ -1,24 +1,24 @@
 <?php
-namespace FixtureBundle\Service;
 
-use FixtureBundle\Alice\Providers\Assets;
-use FixtureBundle\Alice\Persister\PimcorePersister;
-use FixtureBundle\Alice\Processor\ClassificationStoreProcessor;
-use FixtureBundle\Alice\Processor\DocumentProperties;
-use FixtureBundle\Alice\Processor\UserProcessor;
-use FixtureBundle\Alice\Processor\WorkspaceProcessor;
-use FixtureBundle\Alice\Providers\ClassificationStoreProvider;
-use FixtureBundle\Alice\Providers\DateTime;
-use FixtureBundle\Alice\Providers\General;
-use FixtureBundle\Alice\Providers\ObjectReference;
+namespace Youwe\FixturesBundle\Service;
+
+use Youwe\FixturesBundle\Alice\Providers\Assets;
+use Youwe\FixturesBundle\Alice\Persister\PimcorePersister;
+use Youwe\FixturesBundle\Alice\Processor\ClassificationStoreProcessor;
+use Youwe\FixturesBundle\Alice\Processor\DocumentProperties;
+use Youwe\FixturesBundle\Alice\Processor\UserProcessor;
+use Youwe\FixturesBundle\Alice\Processor\WorkspaceProcessor;
+use Youwe\FixturesBundle\Alice\Providers\ClassificationStoreProvider;
+use Youwe\FixturesBundle\Alice\Providers\DateTime;
+use Youwe\FixturesBundle\Alice\Providers\General;
+use Youwe\FixturesBundle\Alice\Providers\ObjectReference;
 use Nelmio\Alice\Fixtures;
 use Pimcore\File;
 
 class FixtureLoader
 {
-
-    const FIXTURE_FOLDER = PIMCORE_PRIVATE_VAR. '/bundles/FixtureBundle/fixtures';
-    const IMAGES_FOLDER  = PIMCORE_PRIVATE_VAR . '/bundles/FixtureBundle/images';
+    const FIXTURE_FOLDER = PIMCORE_PRIVATE_VAR . '/bundles/FixturesBundle/fixtures';
+    const IMAGES_FOLDER  = PIMCORE_PRIVATE_VAR . '/bundles/FixturesBundle/images';
 
     private static $objects = [];
     /**

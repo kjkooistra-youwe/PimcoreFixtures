@@ -1,21 +1,12 @@
 <?php
 
+namespace Youwe\FixturesBundle\Service;
 
-namespace FixtureBundle;
-
-
-use FixtureBundle\Service\FixtureLoader;
-use Pimcore\File;
-use Pimcore\Model\Element\AbstractElement;
-use Pimcore\Model\DataObject\AbstractObject;
-use Pimcore\Model\DataObject\Folder;
-use ReflectionClass;
 use Symfony\Component\Yaml\Yaml;
 
 class Rearrange {
 
     private $knownKeys = [];
-
 
     public function rearrangeFixtures() {
 
@@ -28,11 +19,6 @@ class Rearrange {
             var_dump($parsedContent [basename($file)]);die;
         }
 
-
-
-
 var_dump(current($parsedContent));die;
-
-
     }
 }

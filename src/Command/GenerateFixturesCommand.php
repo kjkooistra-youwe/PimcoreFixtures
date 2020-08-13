@@ -1,23 +1,17 @@
 <?php
 
-namespace FixtureBundle\Command;
+namespace Youwe\FixturesBundle\Command;
 
-use FixtureBundle\Repository\FolderRepository;
-use FixtureBundle\Service\FixtureLoader;
-use FixtureBundle\Service\Generator;
+use Youwe\FixturesBundle\Repository\FolderRepository;
+use Youwe\FixturesBundle\Service\FixtureLoader;
+use Youwe\FixturesBundle\Service\Generator;
 use Pimcore\Console\AbstractCommand;
-use Pimcore\Model\Element\AbstractElement;
-use Pimcore\Model\DataObject\AbstractObject;
 use Pimcore\Model\DataObject\Folder;
-use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
-use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
-use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Question\ChoiceQuestion;
 use Symfony\Component\Console\Question\ConfirmationQuestion;
 use Symfony\Component\Console\Question\Question;
-use Symfony\Component\Validator\Constraints\Choice;
 
 class GenerateFixturesCommand extends AbstractCommand
 {
@@ -93,5 +87,4 @@ class GenerateFixturesCommand extends AbstractCommand
 
         return $foldersArr;
     }
-
 }

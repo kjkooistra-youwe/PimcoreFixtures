@@ -1,6 +1,6 @@
 <?php
 
-namespace FixtureBundle\Alice\Persister;
+namespace Youwe\FixturesBundle\Alice\Persister;
 
 use Nelmio\Alice\PersisterInterface;
 use Pimcore\Model\Asset;
@@ -17,7 +17,6 @@ use Pimcore\Model\DataObject\QuantityValue;
 
 class PimcorePersister implements PersisterInterface
 {
-
     /**
      * @var bool
      */

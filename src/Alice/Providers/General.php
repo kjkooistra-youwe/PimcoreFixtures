@@ -1,13 +1,11 @@
 <?php
 
-
-namespace FixtureBundle\Alice\Providers;
+namespace Youwe\FixturesBundle\Alice\Providers;
 
 use Pimcore\File;
 
 class General
 {
-
     /**
      * @param $number
      * @return bool true if pair and false if impair

@@ -1,14 +1,12 @@
 <?php
 
-namespace FixtureBundle\Command;
+namespace Youwe\FixturesBundle\Command;
 
-use FixtureBundle\Service\FixtureLoader;
+use Youwe\FixturesBundle\Service\FixtureLoader;
 use Pimcore\Console\AbstractCommand;
-use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Helper\ProgressBar;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
-use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
 class LoadFixturesCommand extends AbstractCommand

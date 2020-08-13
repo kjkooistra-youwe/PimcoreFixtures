@@ -1,20 +1,15 @@
 <?php
 
-
-namespace FixtureBundle\Alice\Processor;
-
+namespace Youwe\FixturesBundle\Alice\Processor;
 
 use Nelmio\Alice\ProcessorInterface;
 use Pimcore\Model\DataObject\AbstractObject;
 use Pimcore\Model\DataObject\Concrete;
-use Pimcore\Model\User;
-use Pimcore\Tool;
 use Pimcore\Model\User\Workspace;
 use Pimcore\Model\Asset\Folder;
 
 class WorkspaceProcessor implements ProcessorInterface
 {
-
     /**
      * Processes an object before it is persisted to DB
      *

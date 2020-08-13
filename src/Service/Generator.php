@@ -1,25 +1,16 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: jorisros
- * Date: 07/01/2018
- * Time: 05:56
- */
 
-namespace FixtureBundle\Service;
+namespace Youwe\FixturesBundle\Service;
 
 use Pimcore\File;
-use Pimcore\Model\Element\AbstractElement;
 use Pimcore\Model\DataObject\AbstractObject;
 use Pimcore\Model\DataObject\Folder;
 use ReflectionClass;
 use Symfony\Component\Yaml\Yaml;
 
-
 class Generator
 {
     const ALL_OBJ_TYPES = [AbstractObject::OBJECT_TYPE_OBJECT, AbstractObject::OBJECT_TYPE_FOLDER , AbstractObject::OBJECT_TYPE_VARIANT];
-
 
     /** @var Folder */
     private $folder;

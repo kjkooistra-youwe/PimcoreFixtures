@@ -1,17 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: qiang
- * Date: 12/01/17
- * Time: 17:25
- */
 
-namespace FixtureBundle\Alice\Providers;
-
+namespace Youwe\FixturesBundle\Alice\Providers;
 
 class DateTime {
-
-
     /**
      * @param string $date
      * @return int

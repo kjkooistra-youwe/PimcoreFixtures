@@ -1,6 +1,6 @@
 <?php
 
-namespace FixtureBundle\Service;
+namespace Youwe\FixturesBundle\Service;
 
 use Pimcore\Model\DataObject;
 use Pimcore\Model\DataObject\AbstractObject;
@@ -237,5 +237,4 @@ class ObjectValueExtractor
 
         return $objKey;
     }
-
 }
