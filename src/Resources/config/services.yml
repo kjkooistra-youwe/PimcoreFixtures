@@ -1,0 +1,38 @@
+services:
+    # default configuration for services in *this* file
+    _defaults:
+        # automatically injects dependencies in your services
+        autowire: true
+        # automatically registers your services as commands, event subscribers, etc.
+        autoconfigure: true
+        # this means you cannot fetch services directly from the container via $container->get()
+        # if you need to do this, you can override this setting on individual services
+        public: false
+
+    # Commands
+    Youwe\FixturesBundle\Command\:
+        resource: '../../Command'
+        tags: ['console.command']
+
+    # Controllers
+    Youwe\FixturesBundle\Controller\:
+        resource: '../../Controller'
+        public: true
+        tags: ['controller.service_arguments']
+
+    # Services
+    youwe.fixtures.fixture_loader:
+        class: Youwe\FixturesBundle\Service\FixtureLoader
+    Youwe\FixturesBundle\Service\FixtureLoader: '@youwe.fixtures.fixture_loader'
+
+    youwe.fixtures.generator:
+        class: Youwe\FixturesBundle\Service\Generator
+    Youwe\FixturesBundle\Service\Generator: '@youwe.fixtures.generator'
+
+    youwe.fixtures.object_value_extractor:
+        class: Youwe\FixturesBundle\Service\ObjectValueExtractor
+    Youwe\FixturesBundle\Service\ObjectValueExtractor: '@youwe.fixtures.object_value_extractor'
+
+    youwe.fixtures.rearrange:
+        class: Youwe\FixturesBundle\Service\Rearrange
+    Youwe\FixturesBundle\Service\Rearrange: '@youwe.fixtures.rearrange'
